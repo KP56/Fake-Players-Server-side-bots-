@@ -98,7 +98,9 @@ public class FakePlayer {
             }
         }
 
-        if (Main.getPlugin().getVersion() == Version.v1_16_R3) {
+        if (Main.getPlugin().getVersion() == Version.v1_20_R3) {
+            entityPlayer = v1_20_R3.spawn(this);
+        } else if (Main.getPlugin().getVersion() == Version.v1_16_R3) {
             entityPlayer = v1_16_R3.spawn(this);
         } else if (Main.getPlugin().getVersion() == Version.v1_12_R1) {
             entityPlayer = v1_12_R1.spawn(this);
